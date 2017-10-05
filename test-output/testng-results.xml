@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="253705" started-at="2017-10-05T00:37:45Z" finished-at="2017-10-05T00:41:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="253705" started-at="2017-10-05T00:37:45Z" finished-at="2017-10-05T00:41:58Z">
+      <class name="com.guo.selenium.testng.TestNGExample">
+        <test-method status="PASS" signature="TestCase01()[pri:0, instance:com.guo.selenium.testng.TestNGExample@8bd1b6a]" name="TestCase01" duration-ms="105353" started-at="2017-10-04T17:37:45Z" finished-at="2017-10-04T17:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method status="PASS" signature="TestCase02()[pri:0, instance:com.guo.selenium.testng.TestNGExample@8bd1b6a]" name="TestCase02" duration-ms="148316" started-at="2017-10-04T17:39:30Z" finished-at="2017-10-04T17:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method status="PASS" signature="TestCase03()[pri:0, instance:com.guo.selenium.testng.TestNGExample@8bd1b6a]" name="TestCase03" duration-ms="3" started-at="2017-10-04T17:41:58Z" finished-at="2017-10-04T17:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.guo.selenium.testng.TestNGExample@8bd1b6a]" name="end" is-config="true" duration-ms="1" started-at="2017-10-04T17:41:58Z" finished-at="2017-10-04T17:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.guo.selenium.testng.TestNGExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
