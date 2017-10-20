@@ -41,20 +41,26 @@ public class TestNGExample {
 	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 	  System.out.println("Open Menu successfully");
 	  
-	  //Mouse over to "Database and Technologies"     	  
+	  //Mouse over to "Database and Technologies"  
+	 /*	  
 	  WebElement database = driver.findElement(By.xpath("//div[@id='u02mmenu']/DIV/UL/LI[3]/A"));
 	  action.moveToElement(database).clickAndHold().perform();
+	  */
+	  action.moveToElement(driver.findElement(By.linkText("Database and Technologies"))).clickAndHold().perform();	  
 	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 	  System.out.println("Navigate to Database successfully");
 	  
 	  //Mouse over to "Java"   
+	 /* 
 	  WebElement java = driver.findElement(By.xpath("//div[@id='u02mmenu']/DIV/UL/LI[3]/DIV/UL/LI[4]/A"));
-	  action.moveToElement(java).clickAndHold().build().perform();
-	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+	  action.moveToElement(java).clickAndHold().build().perform();   
+	*/	  
+	  action.moveToElement(driver.findElement(By.linkText("Java"))).clickAndHold().build().perform();
+          driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 	  System.out.println("Move to Java successfully");
 	  
 	  //Click the element of "Overview of Java" 
-	  driver.findElement(By.xpath("//div[@id='u02mmenu']/DIV/UL/LI[3]/DIV/UL/LI[4]/DIV/UL/LI[2]/A")).click();
+          action.moveToElement(driver.findElement(By.linkText("Overview of Java"))).clickAndHold().perform();
 	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 	  Thread.sleep(3000);
 	  	  
