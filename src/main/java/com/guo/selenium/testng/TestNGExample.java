@@ -38,7 +38,7 @@ public class TestNGExample {
 	  
 	  //Mouse over to the "Menu"
 	  action.moveToElement(driver.findElement(By.id("u02menulink"))).clickAndHold().perform();
-	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  System.out.println("Open Menu successfully");
 	  
 	  //Mouse over to "Database and Technologies"  
@@ -47,7 +47,7 @@ public class TestNGExample {
 	  action.moveToElement(database).clickAndHold().perform();
 	  */
 	  action.moveToElement(driver.findElement(By.linkText("Database and Technologies"))).clickAndHold().perform();	  
-	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  System.out.println("Navigate to Database successfully");
 	  
 	  //Mouse over to "Java"   
@@ -56,12 +56,12 @@ public class TestNGExample {
 	  action.moveToElement(java).clickAndHold().build().perform();   
 	*/	  
 	  action.moveToElement(driver.findElement(By.linkText("Java"))).clickAndHold().build().perform();
-          driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+          driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  System.out.println("Move to Java successfully");
 	  
 	  //Click the element of "Overview of Java" 
           action.moveToElement(driver.findElement(By.linkText("Overview of Java"))).clickAndHold().perform();
-	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  Thread.sleep(3000);
 	  	  
 	  String expectedURL ="https://www.oracle.com/java/index.html";
