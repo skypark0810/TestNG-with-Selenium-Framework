@@ -42,19 +42,11 @@ public class TestNGExample {
 	  System.out.println("Open Menu successfully");
 	  
 	  //Mouse over to "Database and Technologies"  
-	 /*	  
-	  WebElement database = driver.findElement(By.xpath("//div[@id='u02mmenu']/DIV/UL/LI[3]/A"));
-	  action.moveToElement(database).clickAndHold().perform();
-	  */
 	  action.moveToElement(driver.findElement(By.linkText("Database and Technologies"))).clickAndHold().perform();	  
 	  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  System.out.println("Navigate to Database successfully");
 	  
-	  //Mouse over to "Java"   
-	 /* 
-	  WebElement java = driver.findElement(By.xpath("//div[@id='u02mmenu']/DIV/UL/LI[3]/DIV/UL/LI[4]/A"));
-	  action.moveToElement(java).clickAndHold().build().perform();   
-	*/	  
+	  //Mouse over to "Java"   	  
 	  action.moveToElement(driver.findElement(By.linkText("Java"))).clickAndHold().build().perform();
           driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  System.out.println("Move to Java successfully");
